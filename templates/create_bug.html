@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <input type="text" name="title" placeholder="Bug Title"><br>
+    <textarea name="description"></textarea><br>
+    <select name="severity">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select><br>
+    <input type="text" name="assigned_to" placeholder="Assign To"><br>
+    <button type="submit">Create</button>
+</form>
+{% endblock %}
